@@ -11,7 +11,9 @@ import EventService from "@/services/EventService.js";
 export default {
   props: ["id"],
   data() {
-    return { event: null };
+    return {
+      event: null,
+    };
   },
   created() {
     EventService.getEvent(this.id)
